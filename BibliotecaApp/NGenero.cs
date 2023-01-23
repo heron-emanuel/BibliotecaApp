@@ -63,7 +63,7 @@ namespace BibliotecaApp
                 }
             }
             catch
-            {
+            {   
                 generos = new List<Genero>();
             }
         }
