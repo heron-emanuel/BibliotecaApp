@@ -7,6 +7,50 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ExemplarToLivroWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ExemplarWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GeneroWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListarExemplarLivroWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListarLivroPorGeneroWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LivroToGeneroWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LivroWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ExemplarToLivroWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ExemplarWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GeneroWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListarExemplarLivroWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListarLivroPorGeneroWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LivroToGeneroWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LivroWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

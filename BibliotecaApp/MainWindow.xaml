@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Biblioteca" Height="200" Width="300">
     <Grid>
-
+        <Menu>
+            <MenuItem Header="Cadastros">
+                <MenuItem Header="Gêneros..." Click="Genero_Click" />
+                <MenuItem Header="Livros..." Click="Livro_Click" />
+                <MenuItem Header="Exemplares..." Click="Exemplar_Click" />
+            </MenuItem>
+            <MenuItem Header="Operações">
+                <MenuItem Header="Atribuir livro a gênero..." Click="LivroToGenero_Click" />
+                <MenuItem Header="Atribuir exemplar a livro..." Click="ExemplarToLivro_Click" />
+                <MenuItem Header="Listar exemplar por livro..." Click="ExemplarPorLivro_Click" />
+                <MenuItem Header="Listar livro por gênero..." Click="LivroPorGenero_Click" />
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>

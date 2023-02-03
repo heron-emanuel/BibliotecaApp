@@ -16,7 +16,7 @@ namespace BibliotecaApp
 
         public override string ToString()
         {
-            return $"{IdLivro} - Capa dura: {CapaDura} - {Estoque};"
+            return $"{IdLivro} - Capa dura: {CapaDura} - {Estoque}";
         }
     }
 }

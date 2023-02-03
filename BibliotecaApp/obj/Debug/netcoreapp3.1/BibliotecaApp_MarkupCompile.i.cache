@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\20211011110010\source\repos\BibliotecaApp\BibliotecaApp\obj\Debug\netcoreapp3.1\
+C:\Users\20211011110010\Source\Repos\BibliotecaApp\BibliotecaApp\obj\Debug\netcoreapp3.1\
 BibliotecaApp
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\20211011110010\source\repos\BibliotecaApp\BibliotecaApp\App.xaml
-11407045341
+C:\Users\20211011110010\Source\Repos\BibliotecaApp\BibliotecaApp\App.xaml
+8-1283456997
 
-11-261832506
+18256352627
 192-1533232326
-MainWindow.xaml;
+ExemplarToLivroWindow.xaml;ExemplarWindow.xaml;GeneroWindow.xaml;ListarExemplarLivroWindow.xaml;ListarLivroPorGeneroWindow.xaml;LivroToGeneroWindow.xaml;LivroWindow.xaml;MainWindow.xaml;
 
 False
 

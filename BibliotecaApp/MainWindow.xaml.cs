@@ -24,5 +24,47 @@ namespace BibliotecaApp
         {
             InitializeComponent();
         }
+
+        private void Genero_Click(object sender, RoutedEventArgs e)
+        {
+            GeneroWindow w = new GeneroWindow();
+            w.ShowDialog();
+        }
+
+        private void Livro_Click(object sender, RoutedEventArgs e)
+        {
+            LivroWindow w = new LivroWindow();
+            w.ShowDialog();
+        }
+
+        private void Exemplar_Click(object sender, RoutedEventArgs e)
+        {
+            ExemplarWindow w = new ExemplarWindow();
+            w.ShowDialog();
+        }
+
+        private void LivroToGenero_Click(object sender, RoutedEventArgs e)
+        {
+            LivroToGeneroWindow w = new LivroToGeneroWindow();
+            w.ShowDialog();
+        }
+
+        private void ExemplarToLivro_Click(object sender, RoutedEventArgs e)
+        {
+            ExemplarToLivroWindow w = new ExemplarToLivroWindow();
+            w.ShowDialog();
+        }
+
+        private void ExemplarPorLivro_Click(object sender, RoutedEventArgs e)
+        {
+            ListarExemplarLivroWindow w = new ListarExemplarLivroWindow();
+            w.ShowDialog();
+        }
+
+        private void LivroPorGenero_Click(object sender, RoutedEventArgs e)
+        {
+            ListarLivroPorGeneroWindow w = new ListarLivroPorGeneroWindow();
+            w.ShowDialog();
+        }
     }
 }

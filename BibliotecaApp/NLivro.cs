@@ -6,25 +6,25 @@ using System.IO;
 
 namespace BibliotecaApp
 {
-    class NLivro
+    static class NLivro
     {
-        private List<Livro> livros = new List<Livro>();
+        private static List<Livro> livros = new List<Livro>();
 
-        public void Inserir(Livro l)
+        public static void Inserir(Livro l)
         {
             Abrir();
             livros.Add(l);
             Salvar();
         }
 
-        public void Excluir(Livro l)
+        public static void Excluir(Livro l)
         {
             Abrir();
             livros.Remove(Listar(l.Id));
             Salvar();
         }
 
-        public void Atualizar(Livro l)
+        public static void Atualizar(Livro l)
         {
             Abrir();
             Livro obj = Listar(l.Id);
@@ -37,13 +37,13 @@ namespace BibliotecaApp
             Salvar();
         }
 
-        public List<Livro> Listar()
+        public static List<Livro> Listar()
         {
             Abrir();
             return livros;
         }
 
-        public Livro Listar(int id)
+        public static Livro Listar(int id)
         {
             Abrir();
             foreach (Livro l in livros)
@@ -57,7 +57,7 @@ namespace BibliotecaApp
             return null;
         }
 
-        public List<Livro> Listar(Genero g)
+        public static List<Livro> Listar(Genero g)
         {
             Abrir();
             List<Livro> ls = new List<Livro>();
@@ -68,7 +68,7 @@ namespace BibliotecaApp
 
         
 
-        public void Abrir()
+        public static void Abrir()
         {
             try
             {
@@ -83,7 +83,7 @@ namespace BibliotecaApp
             }
         }
 
-        public void Salvar()
+        public static void Salvar()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<Livro>));
             using (StreamWriter writer = new StreamWriter("./livro.xml"))
@@ -92,7 +92,7 @@ namespace BibliotecaApp
             }
         }
 
-        public void AtribuirGenero(Livro l, Genero g)
+        public static void AtribuirGenero(Livro l, Genero g)
         {
             Abrir();
             Livro obj = Listar(l.Id);

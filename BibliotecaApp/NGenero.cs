@@ -6,25 +6,25 @@ using System.IO;
 
 namespace BibliotecaApp
 {
-    class NGenero
+    static class NGenero
     {
-        private List<Genero> generos = new List<Genero>();
+        private static List<Genero> generos = new List<Genero>();
 
-        public void Inserir(Genero g)
+        public static void Inserir(Genero g)
         {
             Abrir();
             generos.Add(g);
             Salvar();
         }
 
-        public void Excluir(Genero g)
+        public static void Excluir(Genero g)
         {
             Abrir();
             generos.Remove(Listar(g.Id));
             Salvar();
         }
 
-        public void Atualizar(Genero g)
+        public static void Atualizar(Genero g)
         {
             Abrir();
             Genero obj = Listar(g.Id);
@@ -32,13 +32,13 @@ namespace BibliotecaApp
             Salvar();
         }
 
-        public List<Genero> Listar()
+        public static List<Genero> Listar()
         {
             Abrir();
             return generos;
         }
 
-        public Genero Listar(int id)
+        public static Genero Listar(int id)
         {
             Abrir();
             foreach (Genero g in generos)
@@ -52,7 +52,7 @@ namespace BibliotecaApp
             return null;
         }
 
-        public void Abrir()
+        public static void Abrir()
         {
             try
             {
@@ -68,7 +68,7 @@ namespace BibliotecaApp
             }
         }
 
-        public void Salvar()
+        public static void Salvar()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<Genero>));
             using (StreamWriter writer = new StreamWriter("./genero.xml"))

@@ -6,25 +6,25 @@ using System.IO;
 
 namespace BibliotecaApp
 {
-    class NExemplar
+    static class NExemplar
     {
-        private List<Exemplar> exemplares = new List<Exemplar>();
+        private static List<Exemplar> exemplares = new List<Exemplar>();
 
-        public void Inserir(Exemplar e)
+        public static void Inserir(Exemplar e)
         {
             Abrir();
             exemplares.Add(e);
             Salvar();
         }
 
-        public void Excluir(Exemplar e)
+        public static void Excluir(Exemplar e)
         {
             Abrir();
             exemplares.Remove(Listar(e.Id));
             Salvar();
         }
 
-        public void Atualizar(Exemplar e)
+        public static void Atualizar(Exemplar e)
         {
             Abrir();
             Exemplar obj = Listar(e.Id);
@@ -34,13 +34,13 @@ namespace BibliotecaApp
             Salvar();
         }
 
-        public List<Exemplar> Listar()
+        public static List<Exemplar> Listar()
         {
             Abrir();
             return exemplares;
         }
 
-        public Exemplar Listar(int id)
+        public static Exemplar Listar(int id)
         {
             Abrir();
             foreach (Exemplar e in exemplares)
@@ -54,7 +54,7 @@ namespace BibliotecaApp
             return null;
         }
 
-        public List<Exemplar> Listar(Livro l)
+        public static List<Exemplar> Listar(Livro l)
         {
             Abrir();
             List<Exemplar> exs = new List<Exemplar>();
@@ -62,7 +62,7 @@ namespace BibliotecaApp
                 if (obj.IdLivro == l.Id) exemplares.Add(obj);
             return exemplares;
         }
-        public void Abrir()
+        public static void Abrir()
         {
             try
             {
@@ -78,7 +78,7 @@ namespace BibliotecaApp
             }
         }
 
-        public void Salvar()
+        public static void Salvar()
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<Exemplar>));
             using (StreamWriter writer = new StreamWriter("./exemplar.xml"))
@@ -87,7 +87,7 @@ namespace BibliotecaApp
             }
         }
 
-        public void AtribuirLivro(Exemplar e, Livro l) 
+        public static void AtribuirLivro(Exemplar e, Livro l) 
         {
             Abrir();
             Exemplar obj = Listar(e.Id);

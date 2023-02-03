@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\20211011110010\\source\\repos\\BibliotecaApp\\BibliotecaApp\\BibliotecaApp.csproj": {}
+    "C:\\Users\\20211011110010\\Source\\Repos\\BibliotecaApp\\BibliotecaApp\\BibliotecaApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\20211011110010\\source\\repos\\BibliotecaApp\\BibliotecaApp\\BibliotecaApp.csproj": {
+    "C:\\Users\\20211011110010\\Source\\Repos\\BibliotecaApp\\BibliotecaApp\\BibliotecaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\20211011110010\\source\\repos\\BibliotecaApp\\BibliotecaApp\\BibliotecaApp.csproj",
+        "projectUniqueName": "C:\\Users\\20211011110010\\Source\\Repos\\BibliotecaApp\\BibliotecaApp\\BibliotecaApp.csproj",
         "projectName": "BibliotecaApp",
-        "projectPath": "C:\\Users\\20211011110010\\source\\repos\\BibliotecaApp\\BibliotecaApp\\BibliotecaApp.csproj",
+        "projectPath": "C:\\Users\\20211011110010\\Source\\Repos\\BibliotecaApp\\BibliotecaApp\\BibliotecaApp.csproj",
         "packagesPath": "C:\\Users\\20211011110010\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\20211011110010\\source\\repos\\BibliotecaApp\\BibliotecaApp\\obj\\",
+        "outputPath": "C:\\Users\\20211011110010\\Source\\Repos\\BibliotecaApp\\BibliotecaApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20211011110010\\AppData\\Roaming\\NuGet\\NuGet.Config",
