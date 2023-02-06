@@ -20,6 +20,19 @@ namespace BibliotecaApp
         public ListarExemplarLivroWindow()
         {
             InitializeComponent();
+            listLivros.ItemsSource = NLivro.Listar();
+        }
+
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            if (listLivros.SelectedItem != null)
+            {
+                Livro l = (Livro)listLivros.SelectedItem;
+                listExemplares.ItemsSource = null;
+                listExemplares.ItemsSource = NExemplar.Listar(l);
+            }
+            else
+                MessageBox.Show("É preciso selecionar um livro");
         }
     }
 }

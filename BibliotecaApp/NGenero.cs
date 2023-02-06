@@ -40,7 +40,6 @@ namespace BibliotecaApp
 
         public static Genero Listar(int id)
         {
-            Abrir();
             foreach (Genero g in generos)
             {
                 if (g.Id == id)

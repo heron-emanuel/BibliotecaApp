@@ -35,7 +35,6 @@ namespace BibliotecaApp
                 l.DataDePublicacao = datePicker.SelectedDate.Value;
             }
             NLivro.Inserir(l);
-            // Lista a turma inserida
             ListarClick(sender, e);
         }
 
@@ -47,7 +46,6 @@ namespace BibliotecaApp
 
         private void AtualizarClick(object sender, RoutedEventArgs e)
         {
-            // Novo objeto com os dados da turma que será inserida
             Livro l = new Livro();
             l.Id = int.Parse(txtId.Text);
             l.Nome = txtNome.Text;
@@ -58,24 +56,19 @@ namespace BibliotecaApp
             {
                 l.DataDePublicacao = datePicker.SelectedDate.Value;
             }
-            // Inserir a turma na lista de turmas
             NLivro.Atualizar(l);
-            // Lista as turmas cadastradas
             ListarClick(sender, e);
         }
 
         private void ExcluirClick(object sender, RoutedEventArgs e)
         {
-            // Novo objeto com os dados da turma que será inserida
             Livro l = new Livro();
             l.Id = int.Parse(txtId.Text);
-            // Inserir a turma na lista de turmas
             NLivro.Excluir(l);
-            // Lista as turmas cadastradas
             ListarClick(sender, e);
         }
 
-        private void listTurmas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void listLivros_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (listLivros.SelectedItem != null)
             {
@@ -84,8 +77,9 @@ namespace BibliotecaApp
                 txtNome.Text = obj.Nome;
                 txtAutor.Text = obj.Autor;
                 txtEditora.Text = obj.Editora;
+                txtNumPaginas.Text = obj.NumPaginas.ToString();
+                datePicker.SelectedDate = obj.DataDePublicacao;
             }
         }
-
     }
 }

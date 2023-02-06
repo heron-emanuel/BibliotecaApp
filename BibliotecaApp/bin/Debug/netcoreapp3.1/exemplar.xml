@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfExemplar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Exemplar>
+    <Id>1</Id>
+    <IdLivro>1</IdLivro>
+    <CapaDura>true</CapaDura>
+    <Estoque>1000</Estoque>
+  </Exemplar>
+</ArrayOfExemplar>

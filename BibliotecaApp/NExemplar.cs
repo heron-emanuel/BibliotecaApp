@@ -42,7 +42,6 @@ namespace BibliotecaApp
 
         public static Exemplar Listar(int id)
         {
-            Abrir();
             foreach (Exemplar e in exemplares)
             {
                 if (e.Id == id)
@@ -59,7 +58,7 @@ namespace BibliotecaApp
             Abrir();
             List<Exemplar> exs = new List<Exemplar>();
             foreach (Exemplar obj in exemplares)
-                if (obj.IdLivro == l.Id) exemplares.Add(obj);
+                if (obj.IdLivro == l.Id) exs.Add(obj);
             return exemplares;
         }
         public static void Abrir()

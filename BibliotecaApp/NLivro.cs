@@ -45,7 +45,6 @@ namespace BibliotecaApp
 
         public static Livro Listar(int id)
         {
-            Abrir();
             foreach (Livro l in livros)
             {
                 if (l.Id == id)

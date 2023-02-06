@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BibliotecaApp
 {
-    class Exemplar
+    public class Exemplar
     {
         public int Id { get; set; }
 

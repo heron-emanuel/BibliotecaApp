@@ -20,6 +20,19 @@ namespace BibliotecaApp
         public ListarLivroPorGeneroWindow()
         {
             InitializeComponent();
+            listGenero.ItemsSource = NGenero.Listar();
+        }
+
+        private void ListarClick(object sender, RoutedEventArgs e)
+        {
+            if (listGenero.SelectedItem != null)
+            {
+                Genero g = (Genero)listGenero.SelectedItem;
+                listLivros.ItemsSource = null;
+                listLivros.ItemsSource = NLivro.Listar(g);
+            }
+            else
+                MessageBox.Show("É preciso selecionar um gênero");
         }
     }
 }

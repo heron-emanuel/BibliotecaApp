@@ -24,12 +24,26 @@ namespace BibliotecaApp
 
         private void ListarClick(object sender, RoutedEventArgs e)
         {
-
+            listLivro.ItemsSource = null;
+            listLivro.ItemsSource = NLivro.Listar();
+            listExemplar.ItemsSource = null;
+            listExemplar.ItemsSource = NExemplar.Listar();
         }
 
         private void AtribuirClick(object sender, RoutedEventArgs e)
         {
-
+            if (listLivro.SelectedItem != null &&
+                listExemplar.SelectedItem != null)
+            {
+                Livro l = (Livro)listLivro.SelectedItem;
+                Exemplar ex = (Exemplar)listExemplar.SelectedItem;
+                NExemplar.AtribuirLivro(ex, l);
+                ListarClick(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("É preciso selecionar um livro e um exemplar");
+            }
         }
     }
 }

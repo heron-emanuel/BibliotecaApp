@@ -11,10 +11,10 @@
         <TextBlock HorizontalAlignment="Left" Margin="55,10,0,0" Text="Nome" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox Name="txtId" HorizontalAlignment="Left" Margin="10,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
         <TextBox Name="txtNome" HorizontalAlignment="Left" Margin="55,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
-        <Button Content="Listar" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top"/>
-        <Button Content="Atualizar" HorizontalAlignment="Left" Margin="89,53,0,0" VerticalAlignment="Top"/>
-        <Button Content="Excluir" HorizontalAlignment="Left" Margin="144,53,0,0" VerticalAlignment="Top"/>
-        <ListBox Name="listLivros" Margin="10,80,15,15" />
+        <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Click="InserirClick"/>
+        <Button Content="Listar" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top" Click="ListarClick"/>
+        <Button Content="Atualizar" HorizontalAlignment="Left" Margin="89,53,0,0" VerticalAlignment="Top" Click="AtualizarClick"/>
+        <Button Content="Excluir" HorizontalAlignment="Left" Margin="144,53,0,0" VerticalAlignment="Top" Click="ExcluirClick"/>
+        <ListBox Name="listGeneros" Margin="10,80,15,15" SelectionChanged="listGeneros_SelectionChanged" />
     </Grid>
 </Window>
